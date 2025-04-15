@@ -1,39 +1,61 @@
 body, html {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: "Noto Serif SC", serif;
-  }
-  
-  #three-canvas {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    display: block;
-    z-index: 0;
-  }
-  
-  .overlay {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('./assets/bg.jpg');
-    background-size: cover;
-    background-position: center;
-    color: #fff4e6;
-    font-size: 2rem;
-    backdrop-filter: brightness(0.6);
-  }
-  
-  .en {
-    font-size: 1rem;
-    display: block;
-    margin-top: 0.5em;
-    opacity: 0.8;
-  }
-  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Noto Serif SC", serif;
+}
+
+#three-canvas {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: brightness(0.5);
+  color: #fff4e6;
+  flex-direction: column;
+}
+
+.en {
+  font-size: 1rem;
+  display: block;
+  margin-top: 0.5em;
+  opacity: 0.8;
+}
+
+#prayButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: transform 0.2s;
+}
+
+#prayButton:hover {
+  transform: scale(1.05);
+}
+
+#prayCount {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #fff3e0;
+}
