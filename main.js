@@ -68,3 +68,14 @@ prayButton.addEventListener('click', () => {
   count += 1;
   prayCount.textContent = `已拜：${count} 次`;
 });
+
+// 临时使用在线模型测试
+loader.load('https://modelviewer.dev/shared-assets/models/Astronaut.glb', (gltf) => {
+  model = gltf.scene;
+  model.scale.set(2, 2, 2);
+  model.position.set(0, -1, 0);
+  scene.add(model);
+  animate();
+}, undefined, (err) => {
+  console.error('模型加载失败', err);
+});
